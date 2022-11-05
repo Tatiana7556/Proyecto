@@ -1,0 +1,116 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electrodomésticos</title>
+    <link rel="stylesheet" href={% static "css/estilos.css" %}>
+    
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <p class="logo">Electrodomésticos GELMAR</p>
+            <nav>
+                <a href="/tatiana">Inicio</a>
+                <a href="/productos">Nuestros Productos</a>
+                <a href="/login">Iniciar Sesión</a>
+            </nav>
+        </div>
+    </header>
+    <section>
+        <h1 class="title">Todos los Electrodomésticos</h1>
+        <div class="contenedor">
+            <div class="card">
+                <a href="/lavadoraLGl">
+                    <img src={% static "Productos/Lavadora Lg19kg 42 libras color gris.png" %}>
+                </a>
+                <h4><a href="/lavadoraLG">Lavadora Lg 19kg 42 libras color gris</a></h4>
+                <p><samp class="precio">Precio:$$$$$$$</samp></p>
+                <form action="/lavadoraLG" id="comprar-producto">
+                    <div>
+                        <label class="buy" for="comprar"><input type="submit" value="Comprar"></label>
+                    </div>
+                </form>
+            </div>
+    
+            <div class="card">
+                <a href="/neveraChallenger">
+                    <img src={% static "Productos/Nevera Challenger 317 lts no frost.png" %}>
+                </a>
+                <h4><a href="/neveraChallengerl">Nevera Challenger 317 lts no frost</a></h4>
+                <p><samp class="precio">Precio:$$$$$$$</samp></p>
+                <form action="/neveraChallenger" id="comprar-producto">
+                    <div>
+                        <label class="buy" for="comprar"><input type="submit" value="Comprar"></label>
+                    </div>
+                </form>
+            </div>
+    
+            <div class="card">
+                <a href="/nevecon">
+                    <img src={% static "Productos/Nevecon Lg 508 lts no frost.png" %}>
+                </a>
+                <h4><a href="/nevecon">Nevecon Lg 508 lts no frost</a></h4>
+                <p><samp class="precio">Precio:$$$$$$$</samp></p>
+                <form action="/nevecon" id="comprar-producto">
+                    <div>
+                        <label class="buy" for="comprar"><input type="submit" value="Comprar"></label>
+                    </div>
+                </form>
+            </div>
+    
+            <div class="card">
+                <a href="/lavadoraMabe">
+                    <img src={% static "Productos/Lavadora Mabe 16kg 35 libras color gris.png" %}>
+                </a>
+                <h4><a href="/lavadoraMabe">Lavadora Mabe 16kg 35 libras color gris</a></h4>
+                <p><samp class="precio">Precio:$$$$$$$</samp></p>
+                <form action="/lavadoraMabe" id="comprar-producto">
+                    <div>
+                        <label class="buy" for="comprar"><input type="submit" value="Comprar"></label>
+                    </div>
+                </form>
+            </div>
+    
+            <div class="card">
+                <a href="/estufaMabe">
+                    <img src={% static "Productos/Estufa MABE 51 cm.png" %}>
+                </a>
+                <h4><a href="/estufaMabe">Estufa MABE 51 cm</a></h4>
+                <p><samp class="precio">Precio:$$$$$$$</samp></p>
+                <form action="/estufaMabe" id="comprar-producto">
+                    <div>
+                        <label class="buy" for="comprar"><input type="submit" value="Comprar"></label>
+                    </div>
+                </form>
+            </div>
+    
+            <div class="card">
+                <a href="/estufa">
+                    <img src={% static "Productos/Estufa 51 cm.png" %}>
+                </a>
+                <h4><a href="/estufa">Estufa 51 cm</a></h4>
+                <p><samp class="precio">Precio:$$$$$$$</samp></p>
+                <form action="/estufa" id="comprar-producto">
+                    <div>
+                        <label class="buy" for="comprar"><input type="submit" value="Comprar"></label>
+                    </div>
+                </form>
+            </div>
+    
+           
+    </section>
+
+    <section id="footer">
+        <footer>
+            <p>&copy;GelmarElectrodomesticos 2022</p>
+        </footer>    
+
+    </section>
+    
+</body>
+</html>

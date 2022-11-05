@@ -1,0 +1,59 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href= {% static "css/registro.css" %}>
+    <link rel="stylesheet" href= {% static "css/estilosloginregis.css" %}>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <p class="logo">Electrodomésticos GELMAR</p>
+            <nav>
+                <a href="/tatiana">Inicio</a>
+                <a href="/productos">Nuestros Productos</a>
+                <a href="/login">Iniciar Sesión</a>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="contenedor">
+        <h2>Iniciar Sesion</h2>
+        <form id="forma" name="forma" method="POST"></form>
+            <div class="elemento">
+                
+                <input type="email" name="correo" id="correo" required="true" placeholder="Ingrese su correo electrónico"/>
+            </div>
+            <div class="elemento">
+                
+                <input type="password" id="password" name="password" required="true" placeholder="Ingrese su contraseña"/>
+            </div>
+            <div class="elemento2">
+                <input type="submit" value="Iniciar sesión">
+            </div>
+            
+            <div class="elemento2">
+                <form action="/registro">
+                    <input type="submit" value="Registrarse">
+                </form>
+            </div>
+            <div class="olvido">
+                <p><a href="#">¿Olvido su Contraseña? Recuperala</a></p>
+            </div>
+        </div>
+        
+    </div>
+
+    <section id="footer">
+        <footer>
+            <p>&copy;GelmarElectrodomesticos 2022</p>
+        </footer>    
+
+    </section>
+
+</body>
+</html>

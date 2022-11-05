@@ -1,0 +1,74 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informes</title>
+    <link rel="stylesheet" href= {% static "css/informes.css" %} >
+    <link rel="stylesheet" href= {% static "css/estilos.css" %}>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <p class="logo">Electrodomésticos GELMAR</p>
+            <nav>
+                <a href="/tatiana">Inicio</a>
+                <a href="/productos">Nuestros Productos</a>
+                <a href="">Ayuda</a>
+                <a href="/administrador">Menu</a>
+            </nav>
+            
+        </div>
+    </header>
+
+    <div class="titulo">
+        <h2>Informes</h2>
+        
+    </div>
+
+    <section class="container1 flex text-center">
+        <div class="columna">
+            <h2>Cotizaciones</h2>
+            <hr>
+            <p>Se generara un informe de las cotizaciones de compradores interesados en los productos.</p>
+             <a href="#" class="btn-informe">Generar Informe</a>
+        </div>
+
+        <div class="columna">
+            <h2>Productos</h2>
+            <hr>
+            <p>Se generara un informe de todos los cotizaciones de los productos de Electrodomésticos Gelmar.</p>
+             <a href="#" class="btn-informe">Generar Informe</a>
+        </div>
+
+        <div class="columna">
+            <h2>PQRS</h2>
+            <hr>
+            <p>Se generara un informe de las preguntas, quejas y reclamos de los clientes.</p>
+             <a href="#" class="btn-informe">Generar Informe</a>
+        </div>
+
+        
+
+    </section>
+
+
+    <div class="contenedor">
+
+        <div>
+            <div class="boton2">
+                    
+                <a href="/administrador" id="administrador"><p>Volver al Menu</p></a>
+            </div>
+        
+        </div>
+
+    </div>
+
+    <br>
+    
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos Whirlpool</title>
+    <link rel="stylesheet" href={% static "css/estilos.css" %}>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <p class="logo">Electrodomésticos GELMAR</p>
+            <nav>
+                <a href="/tatiana">Inicio</a>
+                <a href="/productos">Nuestros Productos</a>
+                <a href="/login">Iniciar Sesión</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="productos-whirlpool">
+        <img src= {% static "marks/whirlpool.png" %} >
+    </section>
+
+    <section>
+        <h1 class="title">Todos los productos</h1>
+        <div class="contenedor">
+            <div class="card">
+                <a href="/neveraWhirlpool">
+                    <img src="/Productos/">
+                </a>
+                <h4><a href="/neveraWhirlpool">Nevera Whirlpool Top Mount 393 L Inoxidable</a></h4>
+                <p><samp class="precio">Precio:$$$$$$$</samp></p>
+                <form action="/neveraWhirlpool" id="comprar-producto">
+                    <div>
+                        <label class="buy" for="comprar"><input type="submit" value="Comprar"></label>
+                    </div>
+                </form>
+            </div>
+    </section>
+    
+</body>
+</html>

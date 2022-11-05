@@ -1,0 +1,53 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href={% static "css/estilos.css" %}>
+    <link rel="stylesheet" href={% static "css/administrador.css" %}>
+    <title>Administrador</title>
+    <script src="Jquery/jquery-1.6.3.min.js">
+    window.alert("Bienvenido a nuestro sitio web");
+
+    </script>
+    
+</head>
+<body>
+
+
+    <header>
+        <div class="container">
+            <p class="logo">Electrodomésticos GELMAR</p>
+            <nav>
+                <a href="/tatiana">Inicio</a>
+                <a href="/productos">Nuestros Productos</a>
+                <a href="/buscador">Ayuda</a>
+            </nav>
+            
+        </div>
+    </header>
+
+     <section>
+    <header class="Tituloosm">       
+        <div class="barra">
+            <h2>Menu<img src={% static "img_tatiana/menu-button_icon-icons.com_72989.png" %} alt=""></h2>
+            
+            <ul>
+                <li><a href="/portafolio">Portafolio de Productos</a></li>
+                <li><a href="/formulariopqr">PQR</a></li>
+                <li><a href="/cotizaciones">Cotizaciones</a></li>
+                <li><a href="/informes">Informes</a></li>
+
+                  
+            </ul>
+           
+        </div> 
+    </header>
+    </section>
+
+
+
+</body>
+</html>

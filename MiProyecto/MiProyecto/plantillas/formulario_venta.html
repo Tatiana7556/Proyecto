@@ -1,0 +1,50 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href= {% static "css/formulario_compra.css" %}>
+  <title>Formulario De Venta</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <p class="logo">Electrodomésticos GELMAR</p>
+            <nav>
+                <a href="/tatiana">Inicio</a>
+                <a href="/productos">Nuestros Productos</a>
+                <a href="/login">Ayuda</a>
+                <a href="/administrador">Menu</a>
+
+            </nav>
+        </div>
+    </header>
+    <section class="form-register">
+        <div class="container">
+            <h4>Formulario De Venta</h4>
+            <label for="nombre">Nombres y Apellidos:</label><br/>
+            <input class="controls" type="text" name="nombre" id="nombre" placeholder="">
+
+            <label for="direccion">Dirección:</label><br/>
+            <input class="controls" type="text" name="direccion" id="direccion" placeholder="">
+
+            <label for="telefono">Teléfono:</label><br/>
+            <input class="controls" type="number" name="telefono" id="telefono" placeholder="">
+
+            <label for="correo">Correo Electrónico:</label><br/>
+            <input class="controls" type="email" name="correo" id="correo" placeholder="">
+            <h5>Nombre del producto:   </h5>
+            <h5>Costo del producto: </h5>
+            <h5>Costo total del envio: </h5>
+            <h5>Forma de pago: </h5>
+            
+            <div>
+                <input class="botons" type="submit" value="Realizar Venta">
+            </div>
+        </div>
+  </section>
+
+</body>
+</html>
